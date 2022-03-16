@@ -1,12 +1,14 @@
+<div class="heading">
+    <h1 >Login Form</h1>
+</div>
 <div class="container">
-    <h1>Login Page</h1><br/>
     <form (ngSubmit)="submit()">
         <div class="login">
-            <span>Username:</span>
-            <input type="text" name="username" [(ngModel)]="login_data.username"/><br/>
-            <span>password:</span>
-            <input type="password" name="password" [(ngModel)]="login_data.password" /> <br/>
+            <label for="uname"><b>Username</b></label><br/>
+            <input type="text" name="username" placeholder="Enter Username" [(ngModel)]="login_data.username"/><br/>
+            <label for="psw"><b>Password</b></label><br/>
+            <input type="password" name="password" placeholder="Enter Password" [(ngModel)]="login_data.password" /> <br/>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Login</button>
     </form>
 </div>
