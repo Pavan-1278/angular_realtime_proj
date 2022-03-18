@@ -1,0 +1,28 @@
+<div class="heading">
+    <h1 >Registration Form</h1>
+</div>
+<div class="container">
+    <form (ngSubmit)="submit()">
+        <div class="registration">
+            <label for="fname"><b>Firstname</b></label><br/>
+            <input type="text" name="firstname" placeholder="Enter Firstname (required) " [(ngModel)]="regdata.fname"/><br/>
+
+            <label for="lname"><b>Username</b></label><br/>
+            <input type="text" name="lastname" placeholder="Enter Lastname (required)" [(ngModel)]="regdata.lname" /><br/>
+
+            <label for="dob" ><b>Date of Birth</b></label><br/>
+            <input type="date" name="dob"  [(ngModel)]="regdata.dob" /><br/>
+
+            <label for="email"><b>Email</b></label><br/>
+            <input type="text" name="email" placeholder="Enter your Email (required)" [(ngModel)]="regdata.email"/><br/>
+
+            <label for="password"><b>Password</b></label><br/>
+            <input type="password" name="password" placeholder="Enter your Password (required)" [(ngModel)]="regdata.password" /><br/>
+
+            <label for="psw"><b>Confirm Password</b></label><br/>
+            <input type="password" name="confirmpassword" placeholder="Confirm your Password (required)" [(ngModel)]="regdata.cpassword" /> <br/>
+
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
