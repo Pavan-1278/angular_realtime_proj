@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "id": 2,
+      "name": "Black Widowasdf",
+      "email": "black-widow@mcu.com",
+      "phone": "001-123-4568"
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": 0,
+      "id": 3
+    },
+    {
+      "name": "Digamber Singh",
+      "email": "digambersingh126@gmail.com",
+      "phone": "09717172811",
+      "id": 4
+    },
+    {
+      "name": "Digamber Singh",
+      "email": "digambersingh126@gmail.com",
+      "phone": "09717172811",
+      "id": 5
+    }
+  ]
+}

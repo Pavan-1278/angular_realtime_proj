@@ -1,4 +1,3 @@
-import { JsonPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RegistrationData } from '../registration-data';
 
@@ -17,7 +16,7 @@ export class RegistrationComponent implements OnInit {
   }
   
   submit(){
-    console.log("Registration Working Successfully"+ JSON.stringify(this.regdata));
+    console.log("Registration Working Successfully"+ JSON.stringify( this.regdata));
     alert("Registration Data"+ JSON.stringify(this.regdata));
   }
 

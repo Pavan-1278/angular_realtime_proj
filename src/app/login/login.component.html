@@ -2,13 +2,40 @@
     <h1 >Login Form</h1>
 </div>
 <div class="container">
-    <form (ngSubmit)="submit()">
+    <form (ngSubmit)="submit()" >
         <div class="login">
-            <label for="uname"><b>Username</b></label><br/>
-            <input type="text" name="username" placeholder="Enter Username" [(ngModel)]="login_data.username"/><br/>
+            <div>
+                <label for="email"><b>Email</b></label><br/>
+                <input type="text" name="email" placeholder="Enter your Email" />
+                <!-- novalidate [formGroup]="loginForm" // formControlName="email" [ngClass]="{'is-invalid': (loginForm.get('email')?.touched || 
+                loginForm.get('email')?.dirty) && !loginForm.get('email')?.valid}" //
+                <span class="invalid-feedback">
+                    <span *ngIf="loginForm.get('email')?.errors?.['required']">
+                        Please enter your email id
+                    </span>
+                    <span *ngIf="loginForm.get('email')?.errors?.['minlength']">
+                    Email should be more than 8 characters.
+                    </span>
+                </span>-->
+            </div>
             <label for="psw"><b>Password</b></label><br/>
-            <input type="password" name="password" placeholder="Enter Password" [(ngModel)]="login_data.password" /> <br/>
+            <input type="password" name="password" placeholder="Enter Password" /> <br/>
+            <!-- formControlName="password" [ngClass]="{'is-invalid': (loginForm.get('password')?.touched ||
+            loginForm.get('password')?.dirty) && !loginForm.get('password')?.valid } "
+            <span class="invalid-feedback">
+                <span *ngIf="loginForm.get('password')?.errors?.['required']">
+                    Please enter your password
+                </span>
+                <span *ngIf="loginForm.get('password')?.errors?.['minlength']">
+                    Password should be more than 5 characters.
+                </span>    
+            </span>-->
         </div>
         <button type="submit">Login</button>
+        <!-- [disabled]="!loginForm.valid" <span *ngIf="!loginForm.valid">The submit button works only after the data is filled correctly.</span> -->
     </form>
 </div>
+<!-- <br>Dirty: {{ loginForm.dirty }}
+<br>Touched: {{ loginForm.touched }}
+<br>Valid: {{ loginForm.valid }}
+<br>Value: {{ loginForm.value | json }} -->
