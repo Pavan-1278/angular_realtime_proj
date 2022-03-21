@@ -11,17 +11,20 @@ import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EmployeeComponent } from './employee/employee.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 @NgModule({
   declarations: [
-    AppComponent, LoginComponent, RegistrationComponent, DashboardComponent, HeaderComponent, FooterComponent, EmployeeComponent
+    AppComponent, LoginComponent, RegistrationComponent, DashboardComponent, HeaderComponent, FooterComponent, EmployeeComponent, AddEmployeeComponent, UpdateEmployeeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

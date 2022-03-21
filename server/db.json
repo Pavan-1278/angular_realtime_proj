@@ -2,27 +2,33 @@
   "employees": [
     {
       "id": 2,
-      "name": "Black Widowasdf",
+      "name": "Black Widow",
       "email": "black-widow@mcu.com",
       "phone": "001-123-4568"
     },
     {
-      "name": "",
-      "email": "",
-      "phone": 0,
+      "name": "Captain America",
+      "email": "captainamerica@mcu.com",
+      "phone": "958-645-1565",
       "id": 3
     },
     {
-      "name": "Digamber Singh",
-      "email": "digambersingh126@gmail.com",
-      "phone": "09717172811",
+      "name": "Tony Stark",
+      "email": "ironman12@mcu.com",
+      "phone": "985-658-1256",
       "id": 4
     },
     {
-      "name": "Digamber Singh",
-      "email": "digambersingh126@gmail.com",
-      "phone": "09717172811",
+      "name": "Nick Fury",
+      "email": "nickfury@mcu.com",
+      "phone": "971-717-2811",
       "id": 5
+    },
+    {
+      "name": "James Bond",
+      "email": "jamesbond007@mcu.com",
+      "phone": "007-172-8223",
+      "id": 6
     }
   ]
 }

@@ -5,12 +5,14 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Delete</th>
             </tr>
             <tr *ngFor="let emp of employees">
                 <td>{{emp.id}}</td>
                 <td>{{emp.name}}</td>
                 <td>{{emp.email}}</td>
                 <td>{{emp.phone}}</td>
+                <td><span style="color:red;padding: left 10px;">X</span></td>
             </tr>
         </table>
 

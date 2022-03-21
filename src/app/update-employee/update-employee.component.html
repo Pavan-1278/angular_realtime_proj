@@ -1,0 +1,24 @@
+<form #myForm="ngForm" (ngSubmit)="submit()">
+    <div class="m-t-20">
+        <label>ID</label>
+        <input type="text" name="id" [(ngModel)]="employee.id" required >
+    
+    </div>
+    <div class="m-t-20">
+        <label>Name</label>
+        <input type="text" name="name" [(ngModel)]="employee.name" required >
+    
+    </div>
+    <div class="m-t-20">
+        <label>Email</label>
+        <input type="text" name="email" [(ngModel)]="employee.email" required>
+    
+    </div>
+    <div class="m-t-20">
+        <label>Phone No</label>
+        <input type="number" name="phone" [(ngModel)]="employee.phone">
+    
+    </div>
+
+    <button  class="m-t-20" type="submit" [disabled]="!myForm.valid" >Submit</button>
+</form>
