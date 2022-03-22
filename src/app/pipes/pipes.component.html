@@ -1,0 +1,37 @@
+<p>pipes works!</p>
+<!-- Transforming Data from one from to another form-->
+<h5>Upper Case Pipe</h5>
+<div>
+    {{title | uppercase}}
+</div>
+
+<h5>Lower Case Pipe</h5>
+<div>
+    {{title | lowercase}}
+</div>
+
+<h5>Currency Pipe</h5>
+<div>
+    {{11.5 | currency:"USD"}}
+</div>
+<div>
+    {{11.5 | currency:"INR"}}
+</div>
+
+
+<h5>Date Pipe</h5>
+<div>
+    {{today_date | date:'d/M/y'}}
+</div>
+
+<div>    
+    {{today_date | date:'M/d/y'}}
+</div>
+
+<div>
+    {{today_date | date:'shortTime'}}
+</div>
+
+<div>
+    {{title | slice:6}}
+</div>

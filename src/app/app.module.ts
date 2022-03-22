@@ -15,10 +15,11 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
-    AppComponent, LoginComponent, RegistrationComponent, DashboardComponent, HeaderComponent, FooterComponent, EmployeeComponent, AddEmployeeComponent, UpdateEmployeeComponent, ParentComponent, ChildComponent
+    AppComponent, LoginComponent, RegistrationComponent, DashboardComponent, HeaderComponent, FooterComponent, EmployeeComponent, AddEmployeeComponent, UpdateEmployeeComponent, ParentComponent, ChildComponent, PipesComponent
   ],
   imports: [
     BrowserModule,
