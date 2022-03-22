@@ -13,10 +13,12 @@ import { EmployeeComponent } from './employee/employee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
-    AppComponent, LoginComponent, RegistrationComponent, DashboardComponent, HeaderComponent, FooterComponent, EmployeeComponent, AddEmployeeComponent, UpdateEmployeeComponent
+    AppComponent, LoginComponent, RegistrationComponent, DashboardComponent, HeaderComponent, FooterComponent, EmployeeComponent, AddEmployeeComponent, UpdateEmployeeComponent, ParentComponent, ChildComponent
   ],
   imports: [
     BrowserModule,

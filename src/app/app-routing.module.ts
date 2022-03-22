@@ -4,6 +4,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { LoginComponent } from './login/login.component';
+import { ParentComponent } from './parent/parent.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
@@ -31,6 +32,10 @@ const routes: Routes = [
     {
         path:'update-employee',
         component: UpdateEmployeeComponent
+    },
+    {
+        path:'parent',
+        component: ParentComponent
     }
 ];
 
