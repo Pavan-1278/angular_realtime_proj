@@ -16,6 +16,8 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { AuthGuardService } from './auth-services/auth-service-guard';
+import { AuthService } from './auth-services/auth-service';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import { PipesComponent } from './pipes/pipes.component';
     HttpClientModule,
 
   ],
-  providers: [],
+  providers: [AuthGuardService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

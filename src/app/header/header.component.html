@@ -1,5 +1,5 @@
 <div>
-    <a [routerLink]="['/']" style="margin-left: 10px;">Dashboard  </a>
+    <a [routerLink]="['/dashboard']" style="margin-left: 10px;">Dashboard  </a>
     <a [routerLink]="['/login']" style="margin-left: 10px;">Login  </a>
     <a [routerLink]="['/register']" style="margin-left: 10px;">Register </a>
     <a [routerLink]="['/employee']" style="margin-left: 10px;">Employees </a>
@@ -7,4 +7,5 @@
     <a [routerLink]="['/update-employee']" style="margin-left: 10px;">Update Employee </a>
     <a [routerLink]="['/parent']" style="margin-left: 10px;">Parent </a>
     <a [routerLink]="['/pipes']" style="margin-left: 10px;">Pipes </a>
+    <button (click)="logout()"   style="margin-left: 10px;">Logout</button>
 </div>

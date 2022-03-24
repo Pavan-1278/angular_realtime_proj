@@ -21,17 +21,23 @@
 
 <h5>Date Pipe</h5>
 <div>
-    {{today_date | date:'d/M/y'}}
+    <span>Date:</span>{{today_date | date:'d/M/y'}}
 </div>
 
 <div>    
-    {{today_date | date:'M/d/y'}}
+    <span>Date with month and day:</span>{{today_date | date:'M/d/y'}}
 </div>
 
 <div>
-    {{today_date | date:'shortTime'}}
+    <span>Short Time:</span>{{today_date | date:'shortTime'}}
 </div>
 
 <div>
-    {{title | slice:6}}
+    <span>Slicing the Title:</span>{{title | slice:6}}
+</div>
+<div>
+    <span>Today Date:</span>{{today_date}}
+</div>
+<div>
+    {{today_date | date:'longTime'}}
 </div>

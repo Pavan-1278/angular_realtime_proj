@@ -8,6 +8,7 @@ import { ParentComponent } from './parent/parent.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { AuthGuardService } from './auth-services/auth-service-guard';
 
 const routes: Routes = [
     {
@@ -19,28 +20,34 @@ const routes: Routes = [
         component: RegistrationComponent
     },
     {
-        path:'',
-        component: DashboardComponent
+        path:'dashboard',
+        component: DashboardComponent,
+        canActivate: [AuthGuardService]
     },
     {
         path:'employee',
-        component: EmployeeComponent
+        component: EmployeeComponent,
+        canActivate: [AuthGuardService]
     },
     {
         path:'add-employee',
-        component: AddEmployeeComponent
+        component: AddEmployeeComponent,
+        canActivate: [AuthGuardService]
     },
     {
         path:'update-employee',
-        component: UpdateEmployeeComponent
+        component: UpdateEmployeeComponent,
+        canActivate: [AuthGuardService]
     },
     {
         path:'parent',
-        component: ParentComponent
+        component: ParentComponent,
+        canActivate: [AuthGuardService]
     },
     {
         path: 'pipes',
-        component: PipesComponent
+        component: PipesComponent,
+        canActivate: [AuthGuardService]
     }
 ];
 
