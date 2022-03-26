@@ -23,6 +23,7 @@ export class AuthService {
         this.isloggedIn=true;
         this.userName=username;
         localStorage.setItem('user',this.userName);
+        window.location.reload();
         this.router.navigate(['dashboard']);
         return this.isloggedIn;
     }

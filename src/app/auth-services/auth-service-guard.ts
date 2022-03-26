@@ -21,7 +21,7 @@ export class AuthGuardService implements CanActivate {
  
             //var urlTree = this.router.createUrlTree(['login']);
             //return urlTree;
-        } 
+        }
  
         return true;
     }
