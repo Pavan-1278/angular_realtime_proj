@@ -1,34 +1,40 @@
 {
   "employees": [
     {
-      "id": 2,
-      "name": "Black Widow",
-      "email": "black-widow@mcu.com",
-      "phone": "001-123-4568"
+      "name": "Iron Man",
+      "email": "ironman@hotmail.com",
+      "phone": 9854865485,
+      "id": "8"
     },
     {
-      "name": "Captain America",
-      "email": "captainamerica@mcu.com",
-      "phone": "958-645-1565",
-      "id": 3
+      "name": "Amanda",
+      "email": "Amanda@gmail.com",
+      "phone": 9876542111,
+      "id": "5"
     },
     {
-      "name": "Tony Stark",
-      "email": "ironman12@mcu.com",
-      "phone": "985-658-1256",
-      "id": 4
+      "name": "Hulk",
+      "email": "hulk@gmail.com",
+      "phone": 5896741365,
+      "id": "6"
     },
     {
-      "name": "Nick Fury",
-      "email": "nickfury@mcu.com",
-      "phone": "971-717-2811",
-      "id": 5
+      "name": "Harvey Specter",
+      "email": "harvey@gmail.com",
+      "phone": 9587412963,
+      "id": "4"
     },
     {
-      "name": "James Bond",
-      "email": "jamesbond007@mcu.com",
-      "phone": "007-172-8223",
-      "id": 6
+      "name": "number eleven",
+      "email": "numbereleven@gmail.com",
+      "phone": 98657438219,
+      "id": "11"
+    },
+    {
+      "name": "Number 12",
+      "email": "number12@gmail.com",
+      "phone": 9876567843,
+      "id": "12"
     }
   ]
 }

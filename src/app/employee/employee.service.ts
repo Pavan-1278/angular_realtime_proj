@@ -24,36 +24,36 @@ export class EmployeeService {
       .pipe(retry(1), catchError(this.handleError));
   }
 
-//   getEmployee(id: any) {
-//     return this.http
-//       .get(this.apiURL + '/employees/' + id)
-//       .pipe(retry(1), catchError(this.handleError));
-//   }
-//   createEmployee(employee: any) {
-//     return this.http
-//       .post(
-//         this.apiURL + '/employees',
-//         JSON.stringify(employee),
-//         this.httpOptions
-//       )
-//       .pipe(retry(1), catchError(this.handleError));
-//   }
-//   updateEmployee(id: any, employee: any){
-//     return this.http
-//       .put(
-//         this.apiURL + '/employees/' + id,
-//         JSON.stringify(employee),
-//         this.httpOptions
-//       )
-//       .pipe(retry(1), catchError(this.handleError));
-//   }
+   getEmployee(id: any) {
+     return this.http
+      .get(this.apiURL + '/employees/' + id)
+      .pipe(retry(1), catchError(this.handleError));
+  }
+  createEmployee(employee: any) {
+    return this.http
+      .post(
+        this.apiURL + '/employees',
+        JSON.stringify(employee),
+        this.httpOptions
+      )
+      .pipe(retry(1), catchError(this.handleError));
+  }
+  updateEmployee(id: any, employee: any){
+    return this.http
+      .put(
+        this.apiURL + '/employees/' + id,
+        JSON.stringify(employee),
+        this.httpOptions
+      )
+      .pipe(retry(1), catchError(this.handleError));
+  }
 
-//   deleteEmployee(id: any) {
-//     return this.http
-//       .delete(this.apiURL + '/employees/' + id, this.httpOptions)
-//       .pipe(retry(1), catchError(this.handleError));
-//   }
-//   // Error handling
+  deleteEmployee(id: any) {
+    return this.http
+      .delete(this.apiURL + '/employees/' + id, this.httpOptions)
+      .pipe(retry(1), catchError(this.handleError));
+  }
+  // Error handling
   handleError(error: any) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {

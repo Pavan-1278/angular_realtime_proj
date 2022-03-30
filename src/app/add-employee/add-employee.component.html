@@ -1,24 +1,29 @@
-<form [formGroup]="form" (ngSubmit)="submit()">
-    <div class="m-t-20">
-        <label>ID</label>
-        <input type="text" formControlName="id" >
+<div class="heading1">
+    <h1>Create Employee</h1>
+</div>
+<div class="container">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="m-t-20">
+            <label><b>ID:</b></label><br/>
+            <input type="text" formControlName="id" [(ngModel)]="add_emp.id" >
+        
+        </div>
+        <div class="m-t-20">
+            <label><b>Name:</b></label><br/>
+            <input type="text" formControlName="name" [(ngModel)]="add_emp.name" >
+        
+        </div>
+        <div class="m-t-20">
+            <label><b>Email:</b></label><br/>
+            <input type="text"  formControlName="email" [(ngModel)]="add_emp.email" >
+        
+        </div>
+        <div class="m-t-20">
+            <label><b>Phone No:</b></label><br/>
+            <input type="number"  formControlName="phone" [(ngModel)]="add_emp.phone" >
+        
+        </div>
     
-    </div>
-    <div class="m-t-20">
-        <label>Name</label>
-        <input type="text" formControlName="name">
-    
-    </div>
-    <div class="m-t-20">
-        <label>Email</label>
-        <input type="text"  formControlName="email">
-    
-    </div>
-    <div class="m-t-20">
-        <label>Phone No</label>
-        <input type="number"  formControlName="phone">
-    
-    </div>
-
-    <button  class="m-t-20" type="submit" [disabled]="!form.valid" >Submit</button>
-</form>
+        <button  class="m-t-20" type="submit" [disabled]="!form.valid" >Submit</button>
+    </form>
+</div>

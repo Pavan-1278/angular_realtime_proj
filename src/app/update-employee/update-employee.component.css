@@ -1,0 +1,57 @@
+.m-t-20{
+    margin-top: 20px;
+  }
+  form {
+  border: 3px solid #f1f1f1;
+  }
+  
+  input[type=text], input[type=number] {
+  width: 90%;
+  padding: 12px 0;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+  
+  button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin-right: 35%;
+  margin-left: 35%;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  align-self: center;
+  }
+  
+  button:hover {
+  opacity: 0.5;
+  }
+  
+  input{
+    margin-top: 10%;
+    margin-right: 40%;
+    margin-left: 40%;
+  }
+  .container {
+        border: 1px solid black;
+        margin-top: 1%;
+        margin-right: 25%;
+        margin-left: 25%;
+        padding: auto;
+  }
+  
+  span.psw {
+  float: right;
+  padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  }

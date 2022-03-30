@@ -1,24 +1,29 @@
-<form #myForm="ngForm" (ngSubmit)="submit()">
-    <div class="m-t-20">
-        <label>ID</label>
-        <input type="text" name="id" [(ngModel)]="employee.id" required >
+<div>
+    <h1>Update Employee</h1>
+</div>
+<div class="container">
+    <form #myForm="ngForm" (ngSubmit)="submit()">
+        <div class="m-t-20">
+            <label><b>ID:</b></label><br/>
+            <input type="text" name="id" [(ngModel)]="emp_upd.id" disabled >
+        
+        </div>
+        <div class="m-t-20">
+            <label><b>Name:</b></label><br/>
+            <input type="text" name="name" [(ngModel)]="emp_upd.name" required >
+        
+        </div>
+        <div class="m-t-20">
+            <label><b>Email:</b></label><br/>
+            <input type="text" name="email" [(ngModel)]="emp_upd.email" required>
+        
+        </div>
+        <div class="m-t-20">
+            <label><b>Phone No:</b></label><br/>
+            <input type="number" name="phone" [(ngModel)]="emp_upd.phone">
+        
+        </div>
     
-    </div>
-    <div class="m-t-20">
-        <label>Name</label>
-        <input type="text" name="name" [(ngModel)]="employee.name" required >
-    
-    </div>
-    <div class="m-t-20">
-        <label>Email</label>
-        <input type="text" name="email" [(ngModel)]="employee.email" required>
-    
-    </div>
-    <div class="m-t-20">
-        <label>Phone No</label>
-        <input type="number" name="phone" [(ngModel)]="employee.phone">
-    
-    </div>
-
-    <button  class="m-t-20" type="submit" [disabled]="!myForm.valid" >Submit</button>
-</form>
+        <button  class="m-t-20" type="submit" [disabled]="!myForm.valid" >Update</button>
+    </form>
+</div>

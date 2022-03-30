@@ -1,5 +1,8 @@
-<h1>Employee Table</h1>
-<div >
+
+<div *ngIf="!showUpdate">
+    <div>
+        <h1>Employee Table</h1>
+    </div>
         <table>
             <tr>
                 <th>ID</th>
@@ -7,14 +10,19 @@
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Delete</th>
+                <th>Edit</th>
             </tr>
             <tr *ngFor="let emp of employees">
                 <td>{{emp.id}}</td>
                 <td>{{emp.name}}</td>
                 <td>{{emp.email}}</td>
                 <td>{{emp.phone}}</td>
-                <td><span style="color:red;padding-left: 10px;">X</span></td>
+                <td><button (click)="deleteEmployee(emp.id)" style="color:red;" >X</button></td>
+                <td><button (click)="updateEmployee(emp)" style="color:red;" ><b>+</b></button></td>
             </tr>
         </table>
+</div>
 
+<div *ngIf="showUpdate">
+    <app-update-employee [currentEmp]="currentEmp" (closewindow)="updateValue($event)" ></app-update-employee>
 </div>
