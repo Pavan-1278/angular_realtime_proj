@@ -10,7 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EmployeeComponent } from './employee/employee.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { ParentComponent } from './parent/parent.component';
@@ -18,10 +18,22 @@ import { ChildComponent } from './child/child.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { AuthGuardService } from './auth-services/auth-service-guard';
 import { AuthService } from './auth-services/auth-service';
+import { HeaderInterceptor } from './service/myinterceptor';
 
 @NgModule({
   declarations: [
-    AppComponent, LoginComponent, RegistrationComponent, DashboardComponent, HeaderComponent, FooterComponent, EmployeeComponent, AddEmployeeComponent, UpdateEmployeeComponent, ParentComponent, ChildComponent, PipesComponent
+    AppComponent,
+    LoginComponent, 
+    RegistrationComponent, 
+    DashboardComponent, 
+    HeaderComponent, 
+    FooterComponent, 
+    EmployeeComponent, 
+    AddEmployeeComponent, 
+    UpdateEmployeeComponent, 
+    ParentComponent, 
+    ChildComponent, 
+    PipesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +43,7 @@ import { AuthService } from './auth-services/auth-service';
     HttpClientModule,
 
   ],
-  providers: [AuthGuardService,AuthService],
+  providers: [AuthGuardService,AuthService,{ provide: HTTP_INTERCEPTORS, useClass: HeaderInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
